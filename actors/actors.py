@@ -1,6 +1,6 @@
 """
 
-@author 'jim'
+@author 'rawtoast'
 """
 
 
@@ -15,4 +15,4 @@ class Character(object):
 
     def wait_for_turn(self):
         # print("{} is waiting, current count {}".format(self.name, self.turn_count))
-        self.turn_count = self.turn_count + self.speed
+        self.turn_count += self.speed

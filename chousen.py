@@ -4,6 +4,7 @@
 """
 from copy import copy
 from actors import Character
+from network.output import Output
 
 _input = input("Player 1 what is your name? ")
 _player1 = Character(name=_input)
@@ -25,6 +26,7 @@ class GameState(object):
         self.__turn += 1
         return copy(self.__turn)
 
+
 _gameState = GameState(_player1, _nextPlayer)
 
 
@@ -40,6 +42,8 @@ def decide_turn(context):
         return turn_count >= threshold
 
     reached_threshold = []
+
+    # Refactor this section
     while not reached_threshold:
         reached_threshold = [x for x in _players if has_reached_threshold(x.turn_count)]
 
@@ -65,13 +69,13 @@ def decide_turn(context):
 
 def take_turn(context):
     player = context.current_player
-    print("It is {}'s turn".format(player.name))
+    Output.send("It is {}'s turn".format(player.name))
     _input = input("Command? ")
-    print("{} says: {}".format(player.name, _input))
+    print("Input was: {}".format(player.name, _input))
 
 
 def end_turn(context):
-    print("Turn {} finished".format(context.increment_turn()))
+    Output.send("Turn {} finished".format(context.increment_turn()))
 
 
 def start_game(context):
@@ -83,7 +87,7 @@ def start_game(context):
 
         end_turn(context)
 
-    print("Game has ended")
+    Output.send("Game has ended")
 
 
 start_game(_gameState)
