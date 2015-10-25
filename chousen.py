@@ -4,7 +4,7 @@
 """
 from copy import copy
 from actors import Character
-from network.output import Output
+from client.output import Output
 
 _input = input("Player 1 what is your name? ")
 _player1 = Character(name=_input)
@@ -72,6 +72,7 @@ def take_turn(context):
     Output.send("It is {}'s turn".format(player.name))
     _input = input("Command? ")
     print("Input was: {}".format(player.name, _input))
+
 
 
 def end_turn(context):
