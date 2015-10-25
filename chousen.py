@@ -4,6 +4,7 @@
 """
 from copy import copy
 from actors import Character
+from client.client import Client
 from client.output import Output
 
 _input = input("Player 1 what is your name? ")
@@ -70,9 +71,14 @@ def decide_turn(context):
 def take_turn(context):
     player = context.current_player
     Output.send("It is {}'s turn".format(player.name))
-    _input = input("Command? ")
-    print("Input was: {}".format(player.name, _input))
 
+    def send_command():
+        print("Input was: {}".format(_input))
+        success, result = Client.send_command(input("Command? "))
+        if not success:
+            send_command()
+
+    send_command()
 
 
 def end_turn(context):

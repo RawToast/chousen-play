@@ -12,4 +12,6 @@ class Client:
 
     @staticmethod
     def send_command(data):
-        print(data)
+        if data == "fail":
+            return False, data
+        return True, data
