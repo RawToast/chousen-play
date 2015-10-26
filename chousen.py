@@ -73,8 +73,8 @@ def take_turn(context):
     Output.send("It is {}'s turn".format(player.name))
 
     def send_command():
-        print("Input was: {}".format(_input))
-        success, result = Client.send_command(input("Command? "))
+        client = Client()
+        success, result = client.send_command(input("Command? "), player)
         if not success:
             send_command()
 
