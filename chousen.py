@@ -16,6 +16,7 @@ _input = input("Player 2 what is your name? ")
 _nextPlayer = Character(name=_input)
 
 
+# Needs to move to server
 class GameState(object):
     __turn = 1
 
@@ -31,6 +32,7 @@ class GameState(object):
 _gameState = GameState(_player1, _nextPlayer)
 
 
+# Needs to move to server
 def decide_turn(context):
     threshold = 1000
 
@@ -81,10 +83,12 @@ def take_turn(context):
     send_command()
 
 
+# Move to server
 def end_turn(context):
     Output.send("Turn {} finished".format(context.increment_turn()))
 
 
+# Also server
 def start_game(context):
     run = True
     while run:
