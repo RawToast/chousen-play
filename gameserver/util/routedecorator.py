@@ -44,11 +44,15 @@ class Route(object):
     def __call__(self, _handler):
         """gets called when we class decorate"""
         name = self.name or _handler.__name__
+        print("Adding route {}".format(name))
         self._routes.append(tornado.web.url(self._uri, _handler, name=name))
         return _handler
 
     @classmethod
     def get_routes(self):
+        print("Returning {} routes".format(len(self._routes)))
+        for route in self._routes:
+            print("Registered: {}".format(route.name))
         return self._routes
 
 

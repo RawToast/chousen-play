@@ -2,7 +2,7 @@
 
 @author 'rawtoast'
 """
-from server.server import ChousenServer
+from gameserver.server import ChousenServer
 
 
 class Client:
