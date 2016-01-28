@@ -1,4 +1,4 @@
-name := """play-getting-started"""
+name := """chousen-stub"""
 
 version := "1.0-SNAPSHOT"
 
