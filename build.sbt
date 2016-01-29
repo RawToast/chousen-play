@@ -9,7 +9,6 @@ scalaVersion := "2.11.7"
 libraryDependencies ++= Seq(
   jdbc,
   cache,
-  "org.postgresql" % "postgresql" % "9.4-1201-jdbc41",
   ws
 )
 
