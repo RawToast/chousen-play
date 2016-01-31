@@ -1,0 +1,10 @@
+{
+  "commandContext": {
+  "playerId": 1,
+  "gameId": 1
+  },
+  "command": {
+    "action": "wait",
+    "actorId": 1
+  }
+}
