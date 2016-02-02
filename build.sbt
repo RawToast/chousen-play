@@ -17,3 +17,7 @@ libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _ )
 libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.6"
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 
+val excluded = "<empty>;public;resources;logs;target;router.Routes.*;controllers\\..*Reverse.*"
+
+ScoverageSbtPlugin.ScoverageKeys.coverageMinimum := 70
+ScoverageSbtPlugin.ScoverageKeys.coverageExcludedPackages := excluded
