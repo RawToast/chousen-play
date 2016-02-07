@@ -38,7 +38,7 @@ class GameControllerSpec extends WordSpecLike with Matchers with OptionValues {
   }
 
 
-  def makeRequest(gameId: Int) = {
+  def makeRequest(gameId: Int): Future[Result] = {
     GameController.getGameState(gameId).apply(FakeRequest())
   }
 
