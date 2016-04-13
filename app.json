@@ -1,0 +1,6 @@
+{
+  "name": "Stub chousen service",
+  "description": "Scala/Play stub rest API deployed to Heroku.",
+  "image": "heroku/scala",
+  "addons": [ ]
+}

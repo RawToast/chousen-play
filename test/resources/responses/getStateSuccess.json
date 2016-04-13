@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "players": [
+    {
+      "id": 1,
+      "name": "TestUser1",
+      "team": [
+        {
+          "name": "Bob"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "TestUser2",
+      "team": [
+        {
+          "name": "Dole"
+        }
+      ]
+    }
+  ]
+}

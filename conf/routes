@@ -1,0 +1,6 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Custom Endpoints
+GET        /game/state/:id        controllers.GameController.getGameState(id:Int)
