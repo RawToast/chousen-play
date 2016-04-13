@@ -1,3 +1,3 @@
 # chousen
 
-Somthing nothing interesting here yet!
+Something interesting here yet!
