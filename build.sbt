@@ -4,7 +4,7 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
   cache,
@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
 libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _ )
 
 // Scala test
-libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.6"
-libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.0"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % "test"
 
 val excluded = "<empty>;public;resources;logs;target;router.Routes.*;controllers\\..*Reverse.*"
 

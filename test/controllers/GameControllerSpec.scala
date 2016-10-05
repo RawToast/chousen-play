@@ -19,6 +19,7 @@ class GameControllerSpec extends WordSpecLike with Matchers with OptionValues {
 
   val ValidGameId = 1
   val InvalidGameId = 5
+  val controller = new GameController()
 
   "The GameController" should {
 
@@ -39,7 +40,7 @@ class GameControllerSpec extends WordSpecLike with Matchers with OptionValues {
 
 
   def makeRequest(gameId: Int): Future[Result] = {
-    GameController.getGameState(gameId).apply(FakeRequest())
+    controller.getGameState(gameId).apply(FakeRequest())
   }
 
   def readResource(location: String): InputStream = getClass().getResourceAsStream(location)

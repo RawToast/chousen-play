@@ -6,7 +6,7 @@ import play.api.mvc.{Action, AnyContent, Controller}
 
 import scala.concurrent.ExecutionContext.Implicits.global
 
-object GameController extends Controller {
+class GameController extends Controller {
 
   def getGameState(id: Int): Action[AnyContent] = Action.async {
     GameState.fetch(id).map {
