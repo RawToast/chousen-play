@@ -1,8 +1,7 @@
 # chousen-stub
 
-[![Build Status](https://travis-ci.org/RawToast/chousen.svg?branch=master)](https://travis-ci.org/RawToast/chousen) 
-[![Test Coverage](https://coveralls.io/repos/github/RawToast/chousen/badge.svg?branch=master)](https://coveralls.io/github/RawToast/chousen)
-[![Codacy Quality](https://api.codacy.com/project/badge/grade/cfd1ba4541f043919f5960dcce048600)](https://www.codacy.com/app/RawToast/chousen)
+[![Build Status](https://travis-ci.org/RawToast/chousen-play.svg?branch=master)](https://travis-ci.org/RawToast/chousen-play)[![Test Coverage](https://coveralls.io/repos/github/RawToast/chousen-play/badge.svg?branch=master)](https://coveralls.io/github/RawToast/chousen-play)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/82818fcee85240369686e4131d4382d6)](https://www.codacy.com/app/RawToast/chousen-play?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RawToast/chousen-play&amp;utm_campaign=Badge_Grade)
 
 Replace with private Finch based repository: https://github.com/RawToast/chousen-server
 
