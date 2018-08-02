@@ -5,4 +5,4 @@
 
 Replaced with Http4s solution: [Chousen-Server](https://github.com/RawToast/chousen-server)
 
-This repo remains only as a reference on Travis, Codacy, and Coveralls integration.
+This repo remains only as a reference on Travis, Codacy, and Coveralls integration!
